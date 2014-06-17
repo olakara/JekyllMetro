@@ -1,11 +1,11 @@
-JekyllMetro
+Jekyll Metro
 ===========
 
 Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
 
 ## Summary
 
-Hyde is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal or protfolio sites.
+Jekyll Metro is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal or protfolio sites.
 The following libraries have been used in this project:
 	1. Bootstrap
 	2. jQuery
