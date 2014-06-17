@@ -1,0 +1,24 @@
+# Dependencies
+markdown: redcarpet
+pygments: true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jekyll Metro
+tagline:          'A Metro theme for Jekyell'
+description:      'A Sample blog using JekyllMetro'
+url:              http://olakara.github.io
+
+# Author Details
+author:
+name:           'Abdel Raoof Olakara'
+url:            https://twitter.com/olakara
+
+# Configurations
+paginate:         5
+
+# Custom vars
+version:          0.1.0
+
