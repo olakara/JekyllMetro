@@ -9,19 +9,27 @@ permalink:        pretty
 title:            Jekyll Metro
 tagline:          'A Metro theme for Jekyell'
 description:      'A Sample blog using JekyllMetro'
-url:              http://olakara.github.io
+url:              http://blog-olakara.rhcloud.com
 
 # Author Details
 author:         'Abdel Raoof Olakara'
-name:           'Abdel Raoof Olakara'
-url:            https://twitter.com/olakara
+
 
 # Google Analytics
-handler: 
+gahandler: 'UA-52149651-1'
 
 # Blog Configurations
-paginate:         5
-
+paginate: 5 # Posts per page on the blog index
+paginate_path: "/blog/page:num"
+destination: ./_site
+navigation:
+- text: Blog
+  url: /blog/
+- text: Archive
+  url: /archive/
+- text: About
+  url: /about/
+  
 # Custom vars
 version:          0.1.0
 
