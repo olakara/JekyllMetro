@@ -12,6 +12,10 @@ The following libraries have been used in this project:
 
 **Note:** Jekyll Metro is still under development
 
+## Demo
+
+A work in progress demo is available at : [Openshift](http://blog-olakara.rhcloud.com)
+
 ## Author
 
 **Abdel Raoof Olakara**
