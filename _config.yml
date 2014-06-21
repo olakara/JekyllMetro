@@ -12,11 +12,14 @@ description:      'A Sample blog using JekyllMetro'
 url:              http://olakara.github.io
 
 # Author Details
-author:
+author:         'Abdel Raoof Olakara'
 name:           'Abdel Raoof Olakara'
 url:            https://twitter.com/olakara
 
-# Configurations
+# Google Analytics
+handler: 
+
+# Blog Configurations
 paginate:         5
 
 # Custom vars

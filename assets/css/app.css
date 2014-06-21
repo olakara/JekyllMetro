@@ -1,0 +1,67 @@
+
+.fa-2 {
+  font-size: 2em;
+}
+.fa-3 {
+  font-size: 4em;
+}
+.fa-4 {
+  font-size: 7em;
+}
+.fa-5 {
+  font-size: 12em;
+}
+.fa-6 {
+  font-size: 20em;
+}
+
+.container > header {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 2.875em 1.875em 3.875em 1.875em;
+	color: #2672EC;
+}
+
+.profile {
+	/*background: url('../images/me.jpg') -50px !important*/
+}
+ 
+.tile {  
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	background: #fff;		
+	padding: 20px;
+	margin-bottom: 30px;
+	height: 160px;
+}
+  
+.title {
+	margin-top: 0px;
+}
+  
+
+.purple, .blue, .red, .orange, .green {
+    color: #fff;
+  }
+  
+.purple {
+    background: #5133AB;
+}
+  
+.red {
+    background: #AC193D;
+}
+  
+.green {
+    background: #00A600;
+}
+  
+.blue {
+    background: #2672EC;
+}
+  
+.orange {
+    background: #DC572E;
+}
