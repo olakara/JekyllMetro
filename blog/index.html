@@ -7,40 +7,45 @@ title: Abdel Raoof's Blog
 <div class="container">
 
 	<header class="clearfix header">
-		<h1>Abdel Raoof's Blog</h1>				
+		<a href="{{site.baseurl}}"><span class="fa fa-arrow-circle-o-left fa-6">&nbsp;</span></a>&nbsp;&nbsp;&nbsp;<h1>Abdel Raoof's Blog</h1>				
 	</header>	
 	
   <div class="posts">
     {% for post in paginator.posts %}
-    <div class="post">
+    <article class="post">
       <h1 class="post-title">
         <a href="{{site.baseurl}}{{ post.url }}">
           {{ post.title }}
         </a>
       </h1>
-  
       <span class="post-date">{{ post.date | date_to_string }}</span>
-  
+      <br/>
       {{ post.content }}
-    </div>
+    </article>
     {% endfor %}
   </div>
-    
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-    {% else %}
-      <span class="pagination-item older">Older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="pagination-item newer" href="/">Newer</a>
-      {% else %}
-        <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-      {% endif %}
-    {% else %}
-      <span class="pagination-item newer">Newer</span>
-    {% endif %}
+  
+  <br/>
+  <div class="row">
+    <div class="col-sm-6 text-left">
+        {% if paginator.next_page %}
+        <a class="btn btn-primary" href="{{paginate_path}}/{{paginator.next_page}}">Older</a>
+        {% else %}
+        <span class="btn btn-primary disabled">Older</span>
+        {% endif %}
+    </div>
+    <div class="col-sm-6 text-right">
+        {% if paginator.previous_page %}
+          {% if paginator.page == 2 %}
+            <a class="btn btn-primary" href="/">Newer</a>
+          {% else %}
+            <a class="btn btn-primary" href="/page{{paginator.previous_page}}">Newer</a>
+          {% endif %}
+        {% else %}
+          <span class="btn btn-primary disabled">Newer</span>
+        {% endif %}
+    </div>
   </div>
+  
 </div>
 

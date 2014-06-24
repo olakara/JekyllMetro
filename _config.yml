@@ -3,7 +3,7 @@ markdown: redcarpet
 pygments: true
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title/
+permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            Jekyll Metro
@@ -18,10 +18,8 @@ author:         'Abdel Raoof Olakara'
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
-# 
-Blog Configurations
-
-paginate: 5 # Posts per page on the blog index
+# Blog Configurations
+paginate: 2 # Posts per page on the blog index
 paginate_path: "/blog/page:num"
 destination: ./_site
 navigation:
@@ -33,4 +31,4 @@ navigation:
   url: /about/
   
 # Custom vars
-version:          0.1.0
+version:          0.2.0
