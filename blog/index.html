@@ -6,19 +6,23 @@ title: Abdel Raoof's Blog
 
 <div class="container">
 
-	<header class="clearfix header">
-		<a href="{{site.baseurl}}"><span class="fa fa-arrow-circle-o-left fa-6">&nbsp;</span></a>&nbsp;&nbsp;&nbsp;<h1>Abdel Raoof's Blog</h1>				
+	<header class="row">
+	  <div class="col-md-12">
+	    <h1><a href="{{site.url}}" class="fa fa-arrow-circle-o-left"></a>&nbsp;&nbsp;&nbsp;Abdel Raoof's Blog</h1>
+	  </div>
 	</header>	
 	
-  <div class="posts">
+  <div class="row">
     {% for post in paginator.posts %}
-    <article class="post">
+    <article class="col-md-12 justified">
       <h1 class="post-title">
         <a href="{{site.baseurl}}{{ post.url }}">
           {{ post.title }}
         </a>
       </h1>
-      <span class="post-date">{{ post.date | date_to_string }}</span>
+      <div class="publish-tag">
+        <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date_to_string }}
+      </div>
       <br/>
       {{ post.content }}
     </article>
@@ -29,7 +33,7 @@ title: Abdel Raoof's Blog
   <div class="row">
     <div class="col-sm-6 text-left">
         {% if paginator.next_page %}
-        <a class="btn btn-primary" href="{{paginate_path}}/{{paginator.next_page}}">Older</a>
+        <a class="btn btn-primary" href="{{paginator.next_page_path}}">Older</a>
         {% else %}
         <span class="btn btn-primary disabled">Older</span>
         {% endif %}
@@ -37,15 +41,14 @@ title: Abdel Raoof's Blog
     <div class="col-sm-6 text-right">
         {% if paginator.previous_page %}
           {% if paginator.page == 2 %}
-            <a class="btn btn-primary" href="/">Newer</a>
+            <a class="btn btn-primary" href="/blog/">Newer</a>
           {% else %}
-            <a class="btn btn-primary" href="/page{{paginator.previous_page}}">Newer</a>
+            <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer</a>
           {% endif %}
         {% else %}
           <span class="btn btn-primary disabled">Newer</span>
         {% endif %}
     </div>
   </div>
-  
 </div>
 

@@ -1,3 +1,17 @@
+.justified {
+    text-align: justify;
+}
+
+.publish-tag {
+    font-variant: small-caps;    
+    color: #aaa;
+    padding-bottom: 10px;
+}
+
+.btn-back {
+    margin-left: -46px;
+    text-decoration:none !important;
+}
 
 .fa-2 {
   font-size: 3em;
@@ -16,10 +30,6 @@
 }
 
 .container > header {
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 2.875em 1.875em 3.875em 1.875em;
 	color: #2672EC;
 }
 
