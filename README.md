@@ -11,6 +11,10 @@ The following libraries have been used in this project:
 
 **Note:** Jekyll Metro is still under development
 
+## Demo
+
+You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com)
+
 ## Author
 
 **Abdel Raoof Olakara**
