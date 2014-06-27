@@ -13,22 +13,6 @@
     text-decoration:none !important;
 }
 
-.fa-2 {
-  font-size: 3em;
-}
-.fa-3 {
-  font-size: 4em;
-}
-.fa-4 {
-  font-size: 10em;
-}
-.fa-5 {
-  font-size: 12em;
-}
-.fa-6 {
-  font-size: 20em;
-}
-
 .container > header {
 	color: #2672EC;
 }
@@ -72,3 +56,17 @@
 .orange {
     background: #DC572E;
 }
+
+.icon {
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;   
+    list-style: none outside none;
+}	
+.icon-twitter{background-position:0px 0px ; width: 128px ; height: 128px; }
+.icon-facebook{background-position:-138px 0px ; width: 128px ; height: 128px; }
+.icon-googleplus{background-position:-276px 0px ; width: 128px ; height: 128px; }
+.icon-RSS{background-position:-414px 0px ; width: 128px ; height: 128px; }
+.icon-linkedin{background-position:-552px 0px ; width: 128px ; height: 128px; }
+.icon-blog{background-position:-690px 0px ; width: 128px ; height: 128px; }
+.icon-resume{background-position:-828px 0px ; width: 128px ; height: 128px; }
+.icon-back{background-position:-966px -40px ; width: 48px ; height: 48px; }

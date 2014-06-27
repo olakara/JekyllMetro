@@ -8,7 +8,12 @@ title: Abdel Raoof's Blog
 
 	<header class="row">
 	  <div class="col-md-12">
-	    <h1><a href="{{site.url}}" class="fa fa-arrow-circle-o-left"></a>&nbsp;&nbsp;&nbsp;Abdel Raoof's Blog</h1>
+	    <h1>
+	      <a href="http://blog-olakara.rhcloud.com">
+	        <div class="icon icon-back" style="width: 48px;height: 48px;float: left;"></div>
+	         &nbsp;&nbsp;&nbsp; Abdel Raoof's Blog
+	       </a>
+	     </h1>
 	  </div>
 	</header>	
 	
@@ -21,34 +26,33 @@ title: Abdel Raoof's Blog
         </a>
       </h1>
       <div class="publish-tag">
-        <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date_to_string }}
+        <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date: "%B %d, %Y" }}
       </div>
       <br/>
       {{ post.content }}
     </article>
     {% endfor %}
   </div>
-  
   <br/>
+  
   <div class="row">
     <div class="col-sm-6 text-left">
         {% if paginator.next_page %}
-        <a class="btn btn-primary" href="{{paginator.next_page_path}}">Older</a>
+        <a class="btn btn-primary" href="{{paginator.next_page_path}}">← Older</a>
         {% else %}
-        <span class="btn btn-primary disabled">Older</span>
+        <span class="btn btn-primary disabled">← Older</span>
         {% endif %}
     </div>
     <div class="col-sm-6 text-right">
         {% if paginator.previous_page %}
           {% if paginator.page == 2 %}
-            <a class="btn btn-primary" href="/blog/">Newer</a>
+            <a class="btn btn-primary" href="/blog/">Newer →</a>
           {% else %}
-            <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer</a>
+            <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer →</a>
           {% endif %}
         {% else %}
-          <span class="btn btn-primary disabled">Newer</span>
+          <span class="btn btn-primary disabled">Newer →</span>
         {% endif %}
     </div>
   </div>
 </div>
-
