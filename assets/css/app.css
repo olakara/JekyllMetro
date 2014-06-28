@@ -13,6 +13,10 @@
     text-decoration:none !important;
 }
 
+.colx {
+margin-bottom:-9999px;padding-bottom:9999px;
+}
+
 .container > header {
 	color: #2672EC;
 }
@@ -27,15 +31,10 @@
 	margin-bottom: 30px;
 	height: 160px;
 }
-  
-.title {
-	margin-top: 0px;
-}
-  
 
 .purple, .blue, .red, .orange, .green {
     color: #fff;
-  }
+}
   
 .purple {
     background: #5133AB;
@@ -62,6 +61,7 @@
     background-repeat: no-repeat;   
     list-style: none outside none;
 }	
+
 .icon-twitter{background-position:0px 0px ; width: 128px ; height: 128px; }
 .icon-facebook{background-position:-138px 0px ; width: 128px ; height: 128px; }
 .icon-googleplus{background-position:-276px 0px ; width: 128px ; height: 128px; }

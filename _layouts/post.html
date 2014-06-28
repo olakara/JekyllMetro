@@ -2,86 +2,73 @@
 layout: master
 ---
 
-<div class="container">
-
-	<header class="row">
-	  <div class="col-md-12 col-xs-12">
-	    <h1>
-	      <a href="http://blog-olakara.rhcloud.com">
-	        <div class="icon icon-back" style="width: 48px;height: 48px;float: left;"></div>
-	         &nbsp;&nbsp;&nbsp; Abdel Raoof's Blog
-	       </a>
-	     </h1>
-	  </div>
-	</header>	
-	
-
-  <div class="row">
-    <article class="col-md-12 col-xs-12 justified">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <div class="publish-tag">
-        <span class="fa fa-calendar"></span>&nbsp;Published On {{ page.date | date: "%B %d, %Y" }}
+      <div class="container-fluid" style="min-height:100%;overflow:hidden">
+        <div class="row">
+          <div class="hidden-xs col-md-2 blue colx">
+            <aside>
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                		<h1><a href="{{sit.url}}/blog" style="color:white;text-decoration:none">Blog</a></h1>
+              	</div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10 colx">
+            <article class="col-md-12 col-xs-12 justified">
+              <h1 class="post-title">{{ page.title }}</h1>
+              <div class="publish-tag">
+                <span class="fa fa-calendar"></span>&nbsp;Published On {{ page.date | date: "%B %d, %Y" }}
+              </div>
+              {{ content }}
+              <br/>
+              <span class="fa fa-tag"></span>Tags:
+              {% if page.tags %}
+                {% for tag in page.tags %}		
+                  <a href="/tags/{{tag}}"><span class="label label-primary">{{tag}}</span></a>
+                {% endfor %}
+              {% else %}  
+                None
+              {% endif %}
+              <br/><br/>
+              <h4>Comments:</h4>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'testingblogo';
+        
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </article>
+			
+			
+            
+            <div class="row">
+              <div class="col-sm-6 col-xs-6 text-left">
+               	{% if page.previous.url %}
+              	<a class="btn btn-primary" href="{{page.previous.url}}">← Previous</a>
+              {% else %}
+              	<span class="btn btn-primary disabled">← Previous</span>
+              {% endif %}
+              </div>
+              <div class="col-sm-6 col-xs-6 text-right">
+                    {% if page.next.url %}
+              	<a class="btn btn-primary" href="{{page.next.url}}">Next →</a>
+              {% else %}
+              	<span class="btn btn-primary disabled">Next →</span>
+              {% endif %} 
+              </div>
+            </div>
+          </div>
+          
+          {% include footer.html %}             
+        </div>        
       </div>
-      {{ content }}
-      <br/>
-      <span class="fa fa-tag"></span>Tags:
-      {% if page.tags %}
-        {% for tag in page.tags %}		
-          <a href="/tags/{{tag}}"><span class="label label-primary">{{tag}}</span></a>
-        {% endfor %}
-      {% else %}  
-        None
-      {% endif %}
-      <br/><br/>
-      <div class="row">
-        <div class="col-sm-6 col-xs-6 text-left">
-         	{% if page.previous.url %}
-        	<a class="btn btn-primary" href="{{page.previous.url}}">← Previous</a>
-        {% else %}
-        	<span class="btn btn-primary disabled">← Previous</span>
-        {% endif %}
-        </div>
-        <div class="col-sm-6 col-xs-6 text-right">
-              {% if page.next.url %}
-        	<a class="btn btn-primary" href="{{page.next.url}}">Next →</a>
-        {% else %}
-        	<span class="btn btn-primary disabled">Next →</span>
-        {% endif %} 
-        </div>
-      </div>
-      <br/><br/>
-      <h4>Comments:</h4>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'testingblogo';
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-    </article>
-  </div>
-  
-  <div class="related">
-    <h4>Related Posts:</h4>
-    <ul class="related-posts">
-      {% for post in site.related_posts limit:3 %}
-        <li>
-          <h6>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-              <small>{{ post.date | date_to_string }}</small>
-            </a>
-          </h6>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  
+      
+      

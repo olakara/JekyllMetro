@@ -4,55 +4,58 @@ title: Abdel Raoof's Blog
 ---
 
 
-<div class="container">
-
-	<header class="row">
-	  <div class="col-md-12">
-	    <h1>
-	      <a href="http://blog-olakara.rhcloud.com">
-	        <div class="icon icon-back" style="width: 48px;height: 48px;float: left;"></div>
-	         &nbsp;&nbsp;&nbsp; Abdel Raoof's Blog
-	       </a>
-	     </h1>
-	  </div>
-	</header>	
-	
-  <div class="row">
-    {% for post in paginator.posts %}
-    <article class="col-md-12 justified">
-      <h1 class="post-title">
-        <a href="{{site.baseurl}}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h1>
-      <div class="publish-tag">
-        <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date: "%B %d, %Y" }}
-      </div>
-      <br/>
-      {{ post.content }}
-    </article>
-    {% endfor %}
-  </div>
-  <br/>
+      <div class="container-fluid" style="min-height:100%;overflow:hidden">
+        <div class="row">
+          <div class="hidden-xs col-md-2 blue colx">
+            <aside>
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                		<h1><a href="{{sit.url}}/blog" style="color:white;text-decoration:none">Blog</a></h1>
+              	</div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10 colx">
+            <div class="row">
+              {% for post in paginator.posts %}
+              <article class="col-md-12 justified">
+                <h1 class="post-title">
+                  <a href="{{site.baseurl}}{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                </h1>
+                <div class="publish-tag">
+                  <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date: "%B %d, %Y" }}
+                </div>
+                <br/>
+                {{ post.content }}
+              </article>
+              {% endfor %}
+            </div>
+            <br/>
   
-  <div class="row">
-    <div class="col-sm-6 text-left">
-        {% if paginator.next_page %}
-        <a class="btn btn-primary" href="{{paginator.next_page_path}}">← Older</a>
-        {% else %}
-        <span class="btn btn-primary disabled">← Older</span>
-        {% endif %}
-    </div>
-    <div class="col-sm-6 text-right">
-        {% if paginator.previous_page %}
-          {% if paginator.page == 2 %}
-            <a class="btn btn-primary" href="/blog/">Newer →</a>
-          {% else %}
-            <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer →</a>
-          {% endif %}
-        {% else %}
-          <span class="btn btn-primary disabled">Newer →</span>
-        {% endif %}
-    </div>
-  </div>
-</div>
+            <div class="row">
+              <div class="col-sm-6 text-left">
+                  {% if paginator.next_page %}
+                  <a class="btn btn-primary" href="{{paginator.next_page_path}}">← Older</a>
+                  {% else %}
+                  <span class="btn btn-primary disabled">← Older</span>
+                  {% endif %}
+              </div>
+              <div class="col-sm-6 text-right">
+                  {% if paginator.previous_page %}
+                    {% if paginator.page == 2 %}
+                      <a class="btn btn-primary" href="/blog/">Newer →</a>
+                    {% else %}
+                      <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer →</a>
+                    {% endif %}
+                  {% else %}
+                    <span class="btn btn-primary disabled">Newer →</span>
+                  {% endif %}
+              </div>
+            </div>
+            
+            {% include footer.html %}
+          </div>
+        </div>
+      </div>  
