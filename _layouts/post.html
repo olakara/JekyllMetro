@@ -2,9 +2,9 @@
 layout: master
 ---
 
-      <div class="container-fluid" style="min-height:100%;overflow:hidden">
+      <div class="container-fluid">
         <div class="row">
-          <div class="hidden-xs col-md-2 blue colx">
+          <div class="hidden-xs col-md-2 blue sidebar">
             <aside>
               <div class="row">
                   <div class="col-md-12 text-center">
@@ -13,7 +13,7 @@ layout: master
               </div>
             </aside>
           </div>
-          <div class="col-md-10 colx">
+          <div class="col-md-10 col-md-offset-2">
             <article class="col-md-12 col-xs-12 justified">
               <h1 class="post-title">{{ page.title }}</h1>
               <div class="publish-tag">
@@ -46,29 +46,24 @@ layout: master
               <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </article>
-			
-			
             
             <div class="row">
               <div class="col-sm-6 col-xs-6 text-left">
                	{% if page.previous.url %}
               	<a class="btn btn-primary" href="{{page.previous.url}}">← Previous</a>
-              {% else %}
+                {% else %}
               	<span class="btn btn-primary disabled">← Previous</span>
-              {% endif %}
+                {% endif %}
               </div>
               <div class="col-sm-6 col-xs-6 text-right">
-                    {% if page.next.url %}
+                {% if page.next.url %}
               	<a class="btn btn-primary" href="{{page.next.url}}">Next →</a>
-              {% else %}
+                {% else %}
               	<span class="btn btn-primary disabled">Next →</span>
-              {% endif %} 
+                {% endif %} 
               </div>
             </div>
+            {% include footer.html %}  
           </div>
-          
-          {% include footer.html %}             
         </div>        
       </div>
-      
-      

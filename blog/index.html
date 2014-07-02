@@ -4,18 +4,32 @@ title: Abdel Raoof's Blog
 ---
 
 
-      <div class="container-fluid" style="min-height:100%;overflow:hidden">
+      <div class="container-fluid">
         <div class="row">
-          <div class="hidden-xs col-md-2 blue colx">
+          <div class="hidden-xs col-md-2 blue sidebar">
             <aside>
               <div class="row">
-                  <div class="col-md-12 text-center">
-                		<h1><a href="{{sit.url}}/blog" style="color:white;text-decoration:none">Blog</a></h1>
+                  <div class="col-md-12">
+                		<h1 class="text-center"><a href="{{sit.url}}" class="icon-back" style="color:white;text-decoration:none"></a></h1>
+              	</div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                		<div class="list-group">
+                        <a href="/about" class="list-group-item active">About Me</a>
+                        <a href="/tags" class="list-group-item">Tags</a>
+                        <a href="/archive" class="list-group-item">Archive</a>
+                    </div>
+                    <div class="list-group">
+                        <a href="http://twitter.com/olakara" class="list-group-item active">Twitter</a>
+                        <a href="#" class="list-group-item">LinkedIn</a>
+                        <a href="#" class="list-group-item">Github</a>
+                    </div>
               	</div>
               </div>
             </aside>
           </div>
-          <div class="col-md-10 colx">
+          <div class="col-md-10 col-md-offset-2">
             <div class="row">
               {% for post in paginator.posts %}
               <article class="col-md-12 justified">
@@ -44,17 +58,16 @@ title: Abdel Raoof's Blog
               </div>
               <div class="col-sm-6 text-right">
                   {% if paginator.previous_page %}
-                    {% if paginator.page == 2 %}
-                      <a class="btn btn-primary" href="/blog/">Newer →</a>
-                    {% else %}
-                      <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer →</a>
-                    {% endif %}
+                  {% if paginator.page == 2 %}
+                  <a class="btn btn-primary" href="/blog/">Newer →</a>
                   {% else %}
-                    <span class="btn btn-primary disabled">Newer →</span>
+                  <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer →</a>
+                  {% endif %}
+                  {% else %}
+                  <span class="btn btn-primary disabled">Newer →</span>
                   {% endif %}
               </div>
             </div>
-            
             {% include footer.html %}
           </div>
         </div>

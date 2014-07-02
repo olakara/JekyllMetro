@@ -8,14 +8,21 @@
     padding-bottom: 10px;
 }
 
-.btn-back {
-    margin-left: -46px;
-    text-decoration:none !important;
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
 }
 
-.colx {
-margin-bottom:-9999px;padding-bottom:9999px;
-}
 
 .container > header {
 	color: #2672EC;
@@ -49,7 +56,7 @@ margin-bottom:-9999px;padding-bottom:9999px;
 }
   
 .blue {
-    background: #2672EC;
+    background: #007fff;
 }
   
 .orange {
