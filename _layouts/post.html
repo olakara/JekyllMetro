@@ -8,9 +8,22 @@ layout: master
             <aside>
               <div class="row">
                   <div class="col-md-12 text-center">
-                		<h1><a href="{{sit.url}}/blog" style="color:white;text-decoration:none">Blog</a></h1>
+                    <h1 class="text-center" style="margin-top:0px"><a href="/blog" class="icon icon-back"></a></h1>
               	</div>
               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                		<ul class="left-nav">
+                        <li class="left-nav-item"><a href="/tags" >Tags</a></li>
+                        <li class="left-nav-item"><a href="/archive">Archive</a></li>
+                    </ul>
+                    <hr/>
+                    <ul class="left-nav">
+                        <li class="left-nav-item"><a href="/about">About Me</a></li>
+                        <li class="left-nav-item"><a href="{{site.twitter}}">Twitter</a></li>
+                        <li class="left-nav-item"><a href="{{site.linkedin}}">LinkedIn</a></li>
+                    </ul>
+              	</div>
             </aside>
           </div>
           <div class="col-md-10 col-md-offset-2">
@@ -46,24 +59,29 @@ layout: master
               <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </article>
+			
+			
             
             <div class="row">
               <div class="col-sm-6 col-xs-6 text-left">
                	{% if page.previous.url %}
-              	<a class="btn btn-primary" href="{{page.previous.url}}">← Previous</a>
-                {% else %}
-              	<span class="btn btn-primary disabled">← Previous</span>
-                {% endif %}
+              	<a class="btn btn-blue" href="{{page.previous.url}}">← Previous</a>
+              {% else %}
+              	<span class="btn btn-blue disabled">← Previous</span>
+              {% endif %}
               </div>
               <div class="col-sm-6 col-xs-6 text-right">
-                {% if page.next.url %}
-              	<a class="btn btn-primary" href="{{page.next.url}}">Next →</a>
-                {% else %}
-              	<span class="btn btn-primary disabled">Next →</span>
-                {% endif %} 
+                    {% if page.next.url %}
+              	<a class="btn btn-blue" href="{{page.next.url}}">Next →</a>
+              {% else %}
+              	<span class="btn btn-blue disabled">Next →</span>
+              {% endif %} 
               </div>
             </div>
+            
             {% include footer.html %}  
           </div>
         </div>        
       </div>
+      
+      

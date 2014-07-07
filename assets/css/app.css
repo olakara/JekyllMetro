@@ -76,4 +76,97 @@
 .icon-linkedin{background-position:-552px 0px ; width: 128px ; height: 128px; }
 .icon-blog{background-position:-690px 0px ; width: 128px ; height: 128px; }
 .icon-resume{background-position:-828px 0px ; width: 128px ; height: 128px; }
-.icon-back{background-position:-966px -40px ; width: 48px ; height: 48px; }
+.icon-back{background-position:-966px -40px ; width: 48px ; height: 48px;display:inline-block;text-decoration:none}
+
+.left-nav {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.left-nav-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    font-size: 18px;
+}
+
+.left-nav > li > a,
+.left-nav > li > a:hover,
+.left-nav > li > a:focus {
+    color: #fff;
+    text-decoration:none;
+}
+
+.alink {
+    font-size: 18px;
+}
+
+.tags {
+  text-align: justify;   
+}
+
+li.purple > a,
+li.purple > a:hover,
+li.purple > a:focus {
+    color: #fff;
+    background: #5133AB;
+    text-decoration: none;
+}
+
+li.blue > a,
+li.blue > a:hover,
+li.blue > a:focus {
+    color: #fff;
+    background: #007fff;
+    text-decoration: none;
+}
+
+li.red > a,
+li.red > a:hover,
+li.red > a:focus {
+    color: #fff;
+    background: #AC193D;
+    text-decoration: none;
+}
+
+li.orange > a,
+li.orange > a:hover,
+li.orange > a:focus {
+    color: #fff;
+    background: #DC572E;
+    text-decoration: none;
+}
+
+li.green > a,
+li.green > a:hover,
+li.green > a:focus {
+    color: #fff;
+    background: #00A600;
+    text-decoration: none;
+}
+
+.btn-purple {
+    color: #fff;
+    background: #5133AB;
+} 
+
+.btn-blue {
+    color: #fff;
+    background: #007fff;
+} 
+
+.btn-red {
+    color: #fff;
+    background: #AC193D;
+} 
+
+.btn-orange {
+    color: #fff;
+    background: #DC572E;
+} 
+
+.btn-green {
+    color: #fff;
+    background: #00A600;
+} 

@@ -10,21 +10,21 @@ title: Abdel Raoof's Blog
             <aside>
               <div class="row">
                   <div class="col-md-12">
-                		<h1 class="text-center"><a href="{{sit.url}}" class="icon-back" style="color:white;text-decoration:none"></a></h1>
+                		<h1 class="text-center" style="margin-top:0px"><a href="/" class="icon icon-back"></a></h1>
               	</div>
               </div>
               <div class="row">
                   <div class="col-md-12">
-                		<div class="list-group">
-                        <a href="/about" class="list-group-item active">About Me</a>
-                        <a href="/tags" class="list-group-item">Tags</a>
-                        <a href="/archive" class="list-group-item">Archive</a>
-                    </div>
-                    <div class="list-group">
-                        <a href="http://twitter.com/olakara" class="list-group-item active">Twitter</a>
-                        <a href="#" class="list-group-item">LinkedIn</a>
-                        <a href="#" class="list-group-item">Github</a>
-                    </div>
+                		<ul class="left-nav">
+                        <li class="left-nav-item"><a href="/tags" >Tags</a></li>
+                        <li class="left-nav-item"><a href="/archive">Archive</a></li>
+                    </ul>
+                    <hr/>
+                    <ul class="left-nav">
+                        <li class="left-nav-item"><a href="/about">About Me</a></li>
+                        <li class="left-nav-item"><a href="http://twitter.com/olakara">Twitter</a></li>
+                        <li class="left-nav-item"><a href="http://ae.linkedin.com/in/olakara/">LinkedIn</a></li>
+                    </ul>
               	</div>
               </div>
             </aside>
@@ -49,22 +49,22 @@ title: Abdel Raoof's Blog
             <br/>
   
             <div class="row">
-              <div class="col-sm-6 text-left">
+              <div class="col-sm-6 col-xs-6 text-left">
                   {% if paginator.next_page %}
-                  <a class="btn btn-primary" href="{{paginator.next_page_path}}">← Older</a>
+                  <a class="btn btn-blue" href="{{paginator.next_page_path}}">← Older</a>
                   {% else %}
-                  <span class="btn btn-primary disabled">← Older</span>
+                  <span class="btn btn-blue disabled">← Older</span>
                   {% endif %}
               </div>
               <div class="col-sm-6 text-right">
                   {% if paginator.previous_page %}
                   {% if paginator.page == 2 %}
-                  <a class="btn btn-primary" href="/blog/">Newer →</a>
+                  <a class="btn btn-blue" href="/blog/">Newer →</a>
                   {% else %}
-                  <a class="btn btn-primary" href="{{paginator.previous_page_path}}">Newer →</a>
+                  <a class="btn btn-blue" href="{{paginator.previous_page_path}}">Newer →</a>
                   {% endif %}
                   {% else %}
-                  <span class="btn btn-primary disabled">Newer →</span>
+                  <span class="btn btn-blue disabled">Newer →</span>
                   {% endif %}
               </div>
             </div>
