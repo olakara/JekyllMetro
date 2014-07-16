@@ -4,16 +4,13 @@ Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
 
 ## Summary
 
-Hyde is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal or protfolio sites.
-The following libraries have been used in this project:
-	1. Bootstrap
-	2. jQuery
+Jekyll Metro is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal sites with blog.
 
-**Note:** Jekyll Metro is still under development
+**Note:** Jekyll Metro is still under development but you may use one of the available releases available. The latest release 0.7.1 is ready for you to use (You will still need some modifications)
 
 ## Demo
 
-You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com)
+You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com) or at [http://olakara.github.io](http://olakara.github.io)
 
 ## Author
 
