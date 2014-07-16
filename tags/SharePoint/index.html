@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tags
+title: Tags - SharePoint
 theme: red
 ---
     <div class="row">
@@ -10,15 +10,12 @@ theme: red
             <section class="tags">
                 <ul class="nav nav-pills">
                     {% for tag in site.tags %}
-                    
                     <li class="red" style="margin:5px">
                         <a href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
                     </li>
-                
                     {% endfor %}
                 </ul>
             </section>
-        
         </div>
         <div class="col-md-2">
         </div>
@@ -27,26 +24,16 @@ theme: red
     <div class="row">
         <div class="col-md-12">
             <section>
-            {% capture tags %}
-                {% for tag in site.tags %}
-                    {{ tag[0] }}
-                {% endfor %}
-            {% endcapture %}
-            
-            {% assign sortedtags = tags | split:' ' | sort %}
-            
-            {% for tag in sortedtags %}
-                <h3>{{tag}}</h3>
+                <h3>SharePoint</h3>
                 <ul>
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
-                            {% if tag == otag %}
+                            {% if otag == 'SharePoint' %}
                                 <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
                     {% endfor %}    
                 </ul>
-            {% endfor %}
             </section>
         </div>
     </div>

@@ -170,3 +170,33 @@ li.green > a:focus {
     color: #fff;
     background: #00A600;
 } 
+
+a.purple-link,
+a.purple-link:hover,
+a.purple-link:focus{
+    color: #5133AB;
+}
+  
+a.red-link,
+a.red-link:hover,
+a.red-link:focus {
+    color: #AC193D;
+}
+  
+a.green-link,
+a.green-link:hover,
+a.green-link:focus {
+    color: #00A600;
+}
+  
+a.blue-link,
+a.blue-link:hover,
+a.blue-link:focus {
+    color: #007fff;
+}
+  
+a.orange-link,
+a.orange-link:hover,
+a.orange-link:focus {
+    color: #DC572E;
+}

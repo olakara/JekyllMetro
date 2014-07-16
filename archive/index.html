@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Archives
+title: Archive
+theme: green
 ---
     <ul>
       {% for post in site.posts %}
@@ -15,6 +16,6 @@ title: Archives
           {% endif %}
         {% endunless %}
     
-        <li class="alink"><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.title }}</a></li>
       {% endfor %}
     </ul>

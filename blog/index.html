@@ -3,38 +3,22 @@ layout: master
 title: Abdel Raoof's Blog
 ---
 
-
+      <style type="text/css">
+        a,a:hover,a:focus {
+          color:#DC572E;
+        }
+      </style>
       <div class="container-fluid">
         <div class="row">
-          <div class="hidden-xs col-md-2 blue sidebar">
-            <aside>
-              <div class="row">
-                  <div class="col-md-12">
-                		<h1 class="text-center" style="margin-top:0px"><a href="/" class="icon icon-back"></a></h1>
-              	</div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                		<ul class="left-nav">
-                        <li class="left-nav-item"><a href="/tags" >Tags</a></li>
-                        <li class="left-nav-item"><a href="/archive">Archive</a></li>
-                    </ul>
-                    <hr/>
-                    <ul class="left-nav">
-                        <li class="left-nav-item"><a href="/about">About Me</a></li>
-                        <li class="left-nav-item"><a href="http://twitter.com/olakara">Twitter</a></li>
-                        <li class="left-nav-item"><a href="http://ae.linkedin.com/in/olakara/">LinkedIn</a></li>
-                    </ul>
-              	</div>
-              </div>
-            </aside>
+          <div class="hidden-xs col-md-2 col-sm-3 orange sidebar">
+            {% include sidemenu.html %}
           </div>
-          <div class="col-md-10 col-md-offset-2">
+          <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
             <div class="row">
               {% for post in paginator.posts %}
               <article class="col-md-12 justified">
                 <h1 class="post-title">
-                  <a href="{{site.baseurl}}{{ post.url }}">
+                  <a href="{{site.baseurl}}{{ post.url }}" class="orange-link">
                     {{ post.title }}
                   </a>
                 </h1>
@@ -51,20 +35,20 @@ title: Abdel Raoof's Blog
             <div class="row">
               <div class="col-sm-6 col-xs-6 text-left">
                   {% if paginator.next_page %}
-                  <a class="btn btn-blue" href="{{paginator.next_page_path}}">← Older</a>
+                    <a class="btn btn-orange" href="{{paginator.next_page_path}}">← Older</a>
                   {% else %}
-                  <span class="btn btn-blue disabled">← Older</span>
+                    <span class="btn btn-orange disabled">← Older</span>
                   {% endif %}
               </div>
-              <div class="col-sm-6 text-right">
+              <div class="col-sm-6 col-xs-6 text-right">
                   {% if paginator.previous_page %}
-                  {% if paginator.page == 2 %}
-                  <a class="btn btn-blue" href="/blog/">Newer →</a>
+                    {% if paginator.page == 2 %}
+                    <a class="btn btn-orange" href="/blog/">Newer →</a>
+                    {% else %}
+                    <a class="btn btn-orange" href="{{paginator.previous_page_path}}">Newer →</a>
+                    {% endif %}
                   {% else %}
-                  <a class="btn btn-blue" href="{{paginator.previous_page_path}}">Newer →</a>
-                  {% endif %}
-                  {% else %}
-                  <span class="btn btn-blue disabled">Newer →</span>
+                    <span class="btn btn-orange disabled">Newer →</span>
                   {% endif %}
               </div>
             </div>
