@@ -1,20 +1,20 @@
 ---
 layout: master
 ---
-	    <div class="container-fluid">
-        <div class="row">
-          {% if page.theme And page.theme != "" And page.theme != nil %}
-            <div class="hidden-xs col-md-2 col-sm-3 {{page.theme}} sidebar">
-          {% else %}
-            <div class="hidden-xs col-md-2 col-sm-3 purple sidebar">
-          {% endif %}
-              {% include sidemenu.html %}
-            </div>
-            <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
-              <h1>{{page.title}}</h1>
-              {{content}}
-              {% include footer.html %}
-            </div>  
-        </div>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    {% if page.theme And page.theme != "" And page.theme != nil %}
+    <div class="hidden-xs col-md-2 col-sm-3 {{page.theme}} sidebar">
+    {% else %}
+    <div class="hidden-xs col-md-2 col-sm-3 purple sidebar">
+    {% endif %}
+        {% include sidemenu.html %}
+    </div>
+    <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
+      <h1>{{page.title}}</h1>
+      {{content}}
+      {% include footer.html %}
+    </div>  
+  </div> <!-- row -->
+</div> <!-- container -->
 

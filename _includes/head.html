@@ -28,9 +28,15 @@
   {% endif %}
   
   <!-- CSS -->
-  <link rel="stylesheet" href="{{site.url}}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{site.url}}/assets/css/app.css">
-  <link rel="stylesheet" href="{{site.url}}/assets/css/font-awesome.css">
+  <link rel="stylesheet" href="{{site.url}}/assets/css/all.css">
+  
+  {% if page.bloghome == true %}
+  <style type="text/css">
+        a,a:hover,a:focus {
+          color:#DC572E;
+        }
+  </style>
+  {% endif %}
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   
