@@ -12,6 +12,19 @@ tagline:          'A Metro theme for Jekyell'
 description:      'A Sample blog using Jekyll Metro'
 url:              'http://blog-olakara.rhcloud.com'
 
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Resume
+  url: /resume/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+
 # Author Details
 author:         'Abdel Raoof Olakara'
 linkedin:       'https://ae.linkedin.com/in/olakara/'
@@ -23,9 +36,9 @@ gplus:          'https://plus.google.com/100425464897246255887/'
 gahandler: 'UA-52149651-1'
 
 # Blog Configurations
-paginate: 2 # Posts per page on the blog index
+paginate: 3 # Posts per page on the blog index
 paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.7.2
+version:          0.7.4

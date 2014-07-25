@@ -6,7 +6,6 @@ theme: green
 ---
     <ul>
       {% for post in site.posts %}
-    
         {% unless post.next %}
           <h3>{{ post.date | date: '%Y' }}</h3>
         {% else %}
@@ -16,7 +15,6 @@ theme: green
             <h3>{{ post.date | date: '%Y' }}</h3>
           {% endif %}
         {% endunless %}
-    
         <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.title }}</a></li>
       {% endfor %}
     </ul>

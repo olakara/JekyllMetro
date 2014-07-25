@@ -11,14 +11,11 @@
   <div class="row">
       <div class="col-md-12">
         <ul class="left-nav">
-            <li class="left-nav-item"><a href="/about">About Me</a></li>
-            <li class="left-nav-item"><a href="/resume">Resume</a></li>
-        </ul>
-        <hr/>
-        <ul class="left-nav">
-		    <li class="left-nav-item"><a href="/blog">Blog</a></li>
-            <li class="left-nav-item"><a href="/tags" >Tags</a></li>
-            <li class="left-nav-item"><a href="/archive">Archive</a></li>
+        {% for link in site.navigation %}
+          <li class="left-nav-item">
+            <a href="{{link.url}}">{{link.text}}</a>
+          </li>
+        {% endfor %}
         </ul>
   	</div>
   </div>	

@@ -1,7 +1,12 @@
-                  <footer class="row">
-                        <div class="col-ms-12 text-center">
-                              <hr/>
-                              &copy; {{ site.time | date: '%Y' }} - {{site.author}}. All rights reserved<br/>
-                              Built using <a href="http://jekyllrb.com/">Jekyll</a> on <a href="http://openshift.com">Openshift</a>
-                        </div>
-                  </footer>
+<footer class="row">
+      <div class="col-ms-12 text-center">
+            <hr/>
+            &copy; {{ site.time | date: '%Y' }} - {{site.author}}. All rights reserved<br/>
+            Built using 
+            {% if page.theme And page.theme != "" And page.theme != nil %}
+            <a class="{{page.theme}}-link" href="http://jekyllrb.com/">Jekyll</a>
+            {% else %}
+            <a href="http://jekyllrb.com/">Jekyll</a>
+            {% endif %}
+      </div>
+</footer>
