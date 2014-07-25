@@ -35,10 +35,13 @@ gplus:          'https://plus.google.com/100425464897246255887/'
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
+# Disqus
+disqushandler: 'testingblogo'
+
 # Blog Configurations
 paginate: 3 # Posts per page on the blog index
 paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.7.4
+version:          0.7.5
