@@ -10,8 +10,7 @@ Jekyll Metro is a theme built on top of bootstrap and other freely available lib
 
 ## Demo
 
-You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com) or at [http://olakara.github.io](http://olakara.github.io)
-
+You can see the live demo of this theme at [http://abdelraoof.com](http://abdelraoof.com) or [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com)
 ## Author
 
 **Abdel Raoof Olakara**
