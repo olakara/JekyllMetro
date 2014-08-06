@@ -6,7 +6,7 @@ Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
 
 Jekyll Metro is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal sites with blog.
 
-**Note:** Jekyll Metro is still under development but you may use one of the available releases available. The latest release 0.7.1 is ready for you to use (You will still need some modifications)
+**Note:** Jekyll Metro is still under development but you may use one of the available releases available. The latest release 0.7.6 is ready for you to use (You will still need some modifications)
 
 ## Demo
 

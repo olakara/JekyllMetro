@@ -9,11 +9,11 @@
                 </div>
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about/">About Me</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/tags/">Tags</a></li>
-                        <li><a href="/archive/">Archive</a></li>
+                        {% for link in site.navigation %}
+                          <li>
+                            <a href="{{link.url}}">{{link.text}}</a>
+                          </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
