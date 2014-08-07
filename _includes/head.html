@@ -3,9 +3,11 @@
   <meta charset="UTF-8">
   {% if page.description %}
 	<meta name="description" content="{{page.description}}">
-	{% endif %}
+  {% else %}
+  <meta name="description" content="{{site.description}}">
+  {% endif %}
 	<meta name="author" content="{{site.author}}">
-	
+
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
@@ -16,7 +18,7 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
-  
+
   {% if page.path contains '_posts' %}
   <!-- Twitter Card data -->
   <meta name="twitter:card" value="summary">
@@ -24,12 +26,12 @@
   <meta property="og:title" content="{{page.title}}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{page.url}}" />
-  <meta property="og:description" content="{{page.description}}" /> 
+  <meta property="og:description" content="{{page.description}}" />
   {% endif %}
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{site.url}}/assets/css/all.css">
-  
+
   {% if page.bloghome == true %}
   <style type="text/css">
         a,a:hover,a:focus {
@@ -37,14 +39,14 @@
         }
   </style>
   {% endif %}
-  
+
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-  
- 
+
+
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{site.url}}/assets/images/favicon-128.png">
   <link rel="shortcut icon" href="{{site.url}}/assets/images/favicon-16.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 </head>
