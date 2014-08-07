@@ -1,0 +1,59 @@
+body {
+	background: url('/assets/images/bcg_wall.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:#fff;
+  	background-color:#333;
+} 	
+
+.bord {
+   border: 1px solid white;
+}
+
+#pin {
+ color: white;
+ }
+
+.fk_icon {
+background-image: url('/assets/images/puf_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.gl {
+background-image: url('/assets/images/gl_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.twt_ico {
+background-image: url('/assets/images/twt_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.jb_ico {
+background-image: url('/assets/images/jb_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.fdd {
+background-image: url('/assets/images/f_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.list_ico {
+background-image: url('/assets/images/list_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.b_ico {
+background-image: url('/assets/images/bg_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
