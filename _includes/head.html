@@ -31,6 +31,10 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{site.url}}/assets/css/all.css">
+  
+  {% if page.title == "Home" %}
+  <link rel="stylesheet" href="{{site.url}}/assets/css/bcg.css">
+  {% endif %}
 
   {% if page.bloghome == true %}
   <style type="text/css">

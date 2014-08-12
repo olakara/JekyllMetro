@@ -10,7 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyell'
 description:      'A Sample blog using Jekyll Metro'
-url:              'http://blog-olakara.rhcloud.com'
+url:              'http://localhost:4000'
 baseurl:          ''
 
 # Navigation
