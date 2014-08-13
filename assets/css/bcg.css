@@ -12,6 +12,15 @@ body {
    border: 1px solid white;
 }
 
+.mtile {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 74px;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 100%;
+}
+
 #pin {
  color: white;
  }
@@ -22,8 +31,20 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
+.fk_icon11 {
+background-image: url('/assets/images/puf_icon_small.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
 .gl {
 background-image: url('/assets/images/gl_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.gl11 {
+background-image: url('/assets/images/gl_icon_small.png');
 background-position: center;
 background-repeat: no-repeat;
 }
@@ -34,8 +55,20 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
+.twt_ico11 {
+background-image: url('/assets/images/twt_icon_small.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
 .jb_ico {
 background-image: url('/assets/images/jb_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.jb_ico11 {
+background-image: url('/assets/images/jb_icon_small.png');
 background-position: center;
 background-repeat: no-repeat;
 }
@@ -46,8 +79,20 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
+.fdd11 {
+background-image: url('/assets/images/f_icon_small.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
 .list_ico {
 background-image: url('/assets/images/list_icon.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.list_ico11 {
+background-image: url('/assets/images/list_icon_small.png');
 background-position: center;
 background-repeat: no-repeat;
 }
@@ -56,4 +101,20 @@ background-repeat: no-repeat;
 background-image: url('/assets/images/bg_icon.png');
 background-position: center;
 background-repeat: no-repeat;
+}
+
+.b_ico11{
+background-image: url('/assets/images/bg_icon_small.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.rep-1 {
+    margin-top: -9%;
+    padding-left: 0;
+}
+
+.rep-2 {
+    margin-top: -9%;
+    padding-left: 0;
 }
