@@ -3,7 +3,7 @@
 }
 
 .publish-tag {
-    font-variant: small-caps;    
+    font-variant: small-caps;
     color: #aaa;
     padding-bottom: 10px;
 }
@@ -32,54 +32,43 @@
 }
 
 
-.tile {  
+.tile {
 	width: 100%;
 	display: inline-block;
 	box-sizing: border-box;
-	background: #fff;		
+	background: #fff;
 	padding: 20px;
 	margin-bottom: 30px;
 	height: 160px;
 }
 
+.tile > .title {
+  margin-top: 0px;
+}
+
 .purple, .blue, .red, .orange, .green {
     color: #fff;
 }
-  
+
 .purple {
     background: #5133AB;
 }
-  
+
 .red {
     background: #AC193D;
 }
-  
+
 .green {
     background: #00A600;
 }
-  
+
 .blue {
     background: #007fff;
 }
-  
+
 .orange {
     background: #DC572E;
 }
-
-.icon {
-    background-image: url("../images/icon.png");
-    background-repeat: no-repeat;   
-    list-style: none outside none;
-}	
-
-.icon-twitter{background-position:0px 0px ; width: 128px ; height: 128px; }
-.icon-facebook{background-position:-138px 0px ; width: 128px ; height: 128px; }
-.icon-googleplus{background-position:-276px 0px ; width: 128px ; height: 128px; }
-.icon-RSS{background-position:-414px 0px ; width: 128px ; height: 128px; }
-.icon-linkedin{background-position:-552px 0px ; width: 128px ; height: 128px; }
-.icon-blog{background-position:-690px 0px ; width: 128px ; height: 128px; }
-.icon-resume{background-position:-828px 0px ; width: 128px ; height: 128px; }
-.icon-back{background-position:-966px -40px ; width: 48px ; height: 48px;display:inline-block;text-decoration:none}
 
 .left-nav {
     margin-bottom: 20px;
@@ -106,7 +95,7 @@
 }
 
 .tags {
-  text-align: justify;   
+  text-align: justify;
 }
 
 li.purple > a,
@@ -152,54 +141,62 @@ li.green > a:focus {
 .btn-purple {
     color: #fff;
     background: #5133AB;
-} 
+}
 
 .btn-blue {
     color: #fff;
     background: #007fff;
-} 
+}
 
 .btn-red {
     color: #fff;
     background: #AC193D;
-} 
+}
 
 .btn-orange {
     color: #fff;
     background: #DC572E;
-} 
+}
 
 .btn-green {
     color: #fff;
     background: #00A600;
-} 
+}
 
 a.purple-link,
 a.purple-link:hover,
 a.purple-link:focus{
     color: #5133AB;
 }
-  
+
 a.red-link,
 a.red-link:hover,
 a.red-link:focus {
     color: #AC193D;
 }
-  
+
 a.green-link,
 a.green-link:hover,
 a.green-link:focus {
     color: #00A600;
 }
-  
+
 a.blue-link,
 a.blue-link:hover,
 a.blue-link:focus {
     color: #007fff;
 }
-  
+
 a.orange-link,
 a.orange-link:hover,
 a.orange-link:focus {
     color: #DC572E;
 }
+
+.icon {
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    list-style: none outside none;
+}
+
+.icon-back{background-position:-966px -40px ; width: 48px ; height: 48px;display:inline-block;text-decoration:none}

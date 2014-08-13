@@ -6,129 +6,95 @@ description: Home Page for Jekyll Metro Theme
 
 <div class="container">
 
-	<div class="hidden-xs" style="margin-top:80px"></div>
-
 	<header class="row">
-
 	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
-
 	    <h1 id="pin">{{site.title}}</h1>
-
 	  </div>
-
-	</header>			
-
-	<nav>			  
-
+	</header>
+	<nav>
 		<div class="row" style="margin-top:25px">
-
  			<div class="col-md-4 col-sm-6 col-xs-12">
-
 				<a href="about/">
-
 					<div class="tile purple profile bord">
-
 						<h2 class="title">About Me</h2>
-
 						<p>Hello World, I am {{site.author}}.</p>
-
 					</div>
-
 				</a>
-
 		    </div>
-
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="resume/" title="Resume" class="tile green bord list_ico"></a>
-
+				<a href="resume/" title="Resume" class="tile red bord icon-resume"></a>
 			</div>
-
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="blog/" title="Blog" class="tile red bord b_ico"></a>
-
+				<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
 			</div>
-
 		</div>
 
-					
+		<div class="row">
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts offset:1 limit:1 %}
+				<a href="{{post.url}}">
+					<div class="tile green bord">
+						<h3 class="title">Recent Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<p> {{ post.content | strip_html | truncatewords: 15 }}</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{post.url}}">
+					<div class="tile red bord">
+						<h3 class="title">Latest Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<p> {{ post.content | strip_html | truncatewords: 15 }}</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
 
 		<div class="row" style="margin-bottom:25px">
-
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="{{site.linkedin}}" class="tile blue bord jb_ico"></a>
-
+				<a href="{{site.linkedin}}" class="tile blue bord icon-linkedin"></a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="{{site.twitter}}"  class="tile blue bord twt_ico"></a>
-
-			</div> 
+				<a href="{{site.twitter}}"  class="tile blue bord icon-twitter"></a>
+			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="{{site.facebook}}" class="tile blue bord fk_icon"></a>
-
-			</div>    
+				<a href="{{site.facebook}}" class="tile blue bord icon-facebook"></a>
+			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="{{site.gplus}}" class="tile orange bord gl"></a>
-
-			</div>				
+				<a href="feed.xml/" class="tile purple bord icon-rss"></a>
+			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="feed.xml/" class="tile purple bord fdd"></a>
-				
+				<a href="{{site.gplus}}" class="tile orange bord icon-googleplus"></a>
 			</div>
 			
 			<!-- Mini tile -->
-			
-			<div class="col-md-2 col-sm-3 col-xs-6"> 
-			
-			<div class="row">
-			
-			<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6"> 
-			
-			    <a href="{{site.linkedin}}" class="mtile blue bord jb_ico11"></a>	
-				
-			</div>	
-			
-			<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6"> 
-			    
-				<a href="{{site.twitter}}"  class="mtile blue bord twt_ico11"></a>
-				
-			</div>
-			
-			</div> 
-			
-			<div class="row"> 
-			
-				<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
-				
-					<a href="{{site.facebook}}" class="mtile purple bord fk_icon11"></a>
-					
-				</div> 
-			
-				<div  class="col-md-6 col-sm-6 col-xs-6 rep-2">
-				
-					<a href="{{site.gplus}}" class="mtile orange bord gl11"></a>
-					
-				</div> 
-			
-			</div>
-			
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="row">
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
+					    <a href="{{site.linkedin}}" class="mtile blue bord icon-linkedin-small"></a>
+					</div>
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
+						<a href="{{site.twitter}}"  class="mtile blue bord icon-twitter-small"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
+						<a href="{{site.facebook}}" class="mtile purple bord icon-facebook-small"></a>
+					</div>
+					<div  class="col-md-6 col-sm-6 col-xs-6 rep-2">
+						<a href="{{site.gplus}}" class="mtile orange bord icon-googleplus-small"></a>
+					</div>
+				</div>
 			</div> <!-- End of Mini tile -->
-			
-			
-			</div>	
-	
+		</div>
 	</nav>
-
 </div>
-	
-

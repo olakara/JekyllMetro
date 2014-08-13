@@ -3,6 +3,7 @@ layout: post
 title:  "A Sample pangram"
 date:   2014-06-23 21:28:58
 categories: sample pangram
+tags: Sample Pangram
 ---
 
 The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz.

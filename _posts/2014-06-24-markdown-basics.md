@@ -3,6 +3,7 @@ layout: post
 title:  Markdown basics
 date:   2014-06-24 23:30:58
 categories: design markdown
+tags: Design Markdown
 ---
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
@@ -36,13 +37,13 @@ used email.
 Markdown's syntax is intended for one purpose: to be used as a
 format for *writing* for the web.
 
-Markdown is not a replacement for HTML, or even close to it. Its
+Markdown is not a <a href="/blog" class="a-purple">replacement for HTML</a>, or even close to it. Its
 syntax is very small, corresponding only to a very small subset of
 HTML tags. The idea is *not* to create a syntax that makes it easier
 to insert HTML tags. In my opinion, HTML tags are already easy to
 insert. The idea for Markdown is to make it easy to read, write, and
 edit prose. HTML is a *publishing* format; Markdown is a *writing*
-format. Thus, Markdown's formatting syntax only addresses issues that
+format. Thus, <a href="/blog" class="a-green">Markdown's formatting syntax</a> only addresses issues that
 can be conveyed in plain text.
 
 For any markup that is not covered by Markdown's syntax, you simply
