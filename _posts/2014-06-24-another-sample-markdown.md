@@ -3,6 +3,7 @@ layout: post
 title:  Another sample markdown
 date:   2014-06-24 23:28:58
 categories: design markdown
+tags: Design Markdown
 ---
 
 An h1 header
