@@ -21,92 +21,96 @@ body {
     width: 100%;
 }
 
+.rside {
+    float: right;
+}
+
 #pin {
- color: #fff;
+    color: #fff;
 }
 
-.icon-facebook {
-background-image: url('/assets/images/icon-facebook.png');
-background-position: center;
-background-repeat: no-repeat;
+.fk-ico {
+	background-image: url('/assets/images/fk_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-facebook-small {
-background-image: url('/assets/images/icon-facebook-small.png');
-background-position: center;
-background-repeat: no-repeat;
+.fk-ico-sm {
+	background-image: url('/assets/images/fk_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-googleplus {
-background-image: url('/assets/images/icon-googleplus.png');
-background-position: center;
-background-repeat: no-repeat;
+.gl-ico {
+	background-image: url('/assets/images/gl_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-googleplus-small {
-background-image: url('/assets/images/icon-googleplus-small.png');
-background-position: center;
-background-repeat: no-repeat;
+.gl-ico-sm {
+	background-image: url('/assets/images/gl_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-twitter {
-background-image: url('/assets/images/icon-twitter.png');
-background-position: center;
-background-repeat: no-repeat;
+.tw-ico {
+	background-image: url('/assets/images/tw_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-twitter-small {
-background-image: url('/assets/images/icon-twitter-small.png');
-background-position: center;
-background-repeat: no-repeat;
+.tw-ico-sm {
+	background-image: url('/assets/images/tw_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-linkedin {
-background-image: url('/assets/images/icon-linkedin.png');
-background-position: center;
-background-repeat: no-repeat;
+.lk-ico {
+	background-image: url('/assets/images/lk_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-linkedin-small {
-background-image: url('/assets/images/icon-linkedin-small.png');
-background-position: center;
-background-repeat: no-repeat;
+.lk-ico-sm {
+	background-image: url('/assets/images/lk_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-rss {
-background-image: url('/assets/images/icon-rss.png');
-background-position: center;
-background-repeat: no-repeat;
+.rs-ico {
+	background-image: url('/assets/images/rs_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.icon-rss-small {
-background-image: url('/assets/images/icon-rss-small.png');
-background-position: center;
-background-repeat: no-repeat;
+.rs-ico-sm {
+	background-image: url('/assets/images/rs_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .icon-resume {
-background-image: url('/assets/images/icon-resume.png');
-background-position: center;
-background-repeat: no-repeat;
+	background-image: url('/assets/images/icon-resume.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .icon-resume-small {
-background-image: url('/assets/images/icon-resume-small.png');
-background-position: center;
-background-repeat: no-repeat;
+	background-image: url('/assets/images/icon-resume-small.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .icon-blog {
-background-image: url('/assets/images/icon-blog.png');
-background-position: center;
-background-repeat: no-repeat;
+	background-image: url('/assets/images/icon-blog.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .icon-blog-small {
-background-image: url('/assets/images/icon-blog-small.png');
-background-position: center;
-background-repeat: no-repeat;
+	background-image: url('/assets/images/icon-blog-small.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .rep-1 {
