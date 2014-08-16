@@ -25,12 +25,25 @@ description: Home Page for Jekyll Metro Theme
 				<a href="resume/" title="Resume" class="tile red bord icon-resume"></a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
-			</div>
+				<div class="live-tile" data-mode="flip" data-delay="4000">
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
+					</div>
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord font-fix">
+						<p>Blog Section:</p>
+							<ol>
+								<li>Posts</li>
+								<li>News</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+			</div>	
 		</div>
 
 		<div class="row">
-
+		<div >	
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts offset:1 limit:1 %}
 				<a href="{{post.url}}">
@@ -42,6 +55,8 @@ description: Home Page for Jekyll Metro Theme
 				</a>
 				{% endfor %}
 			</div>
+			
+		</div>	
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts limit:1 %}
 				<a href="{{post.url}}">
@@ -56,9 +71,15 @@ description: Home Page for Jekyll Metro Theme
 		</div>
 
 		<div class="row" style="margin-bottom:25px">
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.linkedin}}" class="tile blue bord lk-ico"></a>
+			<div data-delay="2000" data-mode="flip" class="live-tile flip ha fix-3">
+			<div class="col-md-2 col-sm-3 col-xs-6 flip-front ha" style="transform: rotateX(180deg); transition: all 500ms ease 0s;">
+				<a class="tile blue bord lk-ico" href="https://ae.linkedin.com/in/olakara/"></a>
 			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6 flip-back ha" style="transform: rotateX(360deg); transition: all 500ms ease 0s;">
+				<a class="tile blue bord tw-ico" href="https://twitter.com/olakara"></a>
+			</div>
+		</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="{{site.twitter}}"  class="tile blue bord tw-ico"></a>
