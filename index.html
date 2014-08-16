@@ -37,7 +37,7 @@ description: Home Page for Jekyll Metro Theme
 					<div class="tile green bord">
 						<h3 class="title">Recent Article</h3>
 						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 15 }}</p>
+						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
 					</div>
 				</a>
 				{% endfor %}
@@ -48,7 +48,7 @@ description: Home Page for Jekyll Metro Theme
 					<div class="tile red bord">
 						<h3 class="title">Latest Article</h3>
 						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 15 }}</p>
+						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
 					</div>
 				</a>
 				{% endfor %}

@@ -29,6 +29,10 @@ body {
     color: #fff;
 }
 
+.tile > h3 {
+    font-size: 24px;
+}
+
 .fk-ico {
 	background-image: url('/assets/images/fk_ico.png');
 	background-position: center;
