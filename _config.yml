@@ -40,9 +40,9 @@ gahandler: 'UA-52149651-1'
 disqushandler: 'testingblogo'
 
 # Blog Configurations
-paginate: 3 # Posts per page on the blog index
+paginate: 10 # Posts per page on the blog index
 paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.7.8
+version:          0.7.9

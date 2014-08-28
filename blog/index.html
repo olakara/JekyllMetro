@@ -5,7 +5,7 @@ description: Landing Page for the blog
 bloghome: true
 ---
 
-      
+
       <div class="container-fluid">
         <div class="row">
           <div class="hidden-xs col-md-2 col-sm-3 orange sidebar">
@@ -15,21 +15,29 @@ bloghome: true
             <div class="row">
               {% for post in paginator.posts %}
               <article class="col-md-12 justified">
-                <h1 class="post-title">
+                <h2 class="post-title">
                   <a href="{{ post.url }}" class="orange-link">
                     {{ post.title }}
                   </a>
-                </h1>
+                </h2>
                 <div class="publish-tag">
                   <span class="fa fa-calendar"></span>&nbsp;PUBLISHED ON {{ post.date | date: "%B %d, %Y" }}
                 </div>
-                <br/>
-                {{ post.content }}
+		              <div class="tags">
+                  {% if post.tags %}
+              		{% for tag in post.tags %}
+                			<a href="/tags/{{tag}}"><span class="label btn-orange">{{tag}}</span></a>
+              		{% endfor %}
+           		 {% else %}
+              		None
+            	 {% endif %}
+                </div>
+                <hr/>
               </article>
               {% endfor %}
             </div>
             <br/>
-  
+
             <div class="row">
               <div class="col-sm-6 col-xs-6 text-left">
                   {% if paginator.next_page %}
@@ -53,4 +61,4 @@ bloghome: true
             {% include footer.html %}
           </div>
         </div>
-      </div>  
+      </div>
