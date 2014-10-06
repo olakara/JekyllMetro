@@ -1,0 +1,45 @@
+---
+layout: page
+title: Search
+description: Search for Jekyll Metro
+---
+
+
+
+<form class="searh-form" role="form">
+<div id="search-form">
+	<input class="search form-control" name="q" placeholder="Search..." type="text">
+</div>
+</form>
+<div class="search-message"></div>
+<div id="results">
+  <h2 class="results-title"></h2>
+  <ul class="results-list"></ul>
+</div>
+<script>
+$(document).ready(function() {
+    var qry = GetURLParameter('q');
+		var data = [
+		{% for post in site.posts %}
+		{
+		"title"    : "{{ post.title | escape }}",
+		"category" : "{{ post.category }}",
+		"tags"	   : "{{post.tags | array_to_sentence_string}}",
+		"url"      : "{{ post.url }}",
+		"date"     : "{{ post.date | date: "%B %d, %Y" }}"
+		} {% if forloop.last %}{% else %},{% endif %}
+		{% endfor %}
+		];
+    var x = $(".search").jekyllSearch({
+			      jsonData            : null,
+            template            : '<li><h4><a href="{url}" title="{title}">{title}</a></h4>Posted on {date}<br>Tags: {tags} </li>',
+            searchResults       : '#results',
+            searchResultsTitle  : '<h3>Search Results</h3>',
+            limit               : '10',
+            noResults           : '<h3>Your search did not match any documents.</h3>Suggestions:<ul><li>Make sure that all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li><li>Try fewer keywords.</li></ul>'
+     });
+     if(qry) {
+			$(".search").val(qry).trigger('keyup').focus();
+     }
+});
+</script>

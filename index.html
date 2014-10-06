@@ -39,11 +39,11 @@ description: Home Page for Jekyll Metro Theme
 						</a>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 
 		<div class="row">
-		<div >	
+
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts offset:1 limit:1 %}
 				<a href="{{post.url}}">
@@ -55,8 +55,7 @@ description: Home Page for Jekyll Metro Theme
 				</a>
 				{% endfor %}
 			</div>
-			
-		</div>	
+
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts limit:1 %}
 				<a href="{{post.url}}">
@@ -66,6 +65,21 @@ description: Home Page for Jekyll Metro Theme
 						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
 					</div>
 				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts %}
+					{% if post.featured == true %}
+					<a href="{{post.url}}">
+						<div class="tile orange bord">
+							<h3 class="title">Featured Article</h3>
+							<h4 class="title">{{ post.title }}</h4>
+							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						</div>
+					</a>
+					{% break %}
+					{% endif %}
 				{% endfor %}
 			</div>
 		</div>
@@ -96,7 +110,7 @@ description: Home Page for Jekyll Metro Theme
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="{{site.gplus}}" class="tile orange bord gl-ico"></a>
 			</div>
-			
+
 			<!-- Mini tile -->
 			<div class="col-md-2 col-sm-3 col-xs-6 rside">
 				<div class="row">
