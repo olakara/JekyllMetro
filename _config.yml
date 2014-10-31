@@ -8,7 +8,7 @@ permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            'Jekyll Metro'
-tagline:          'A Metro theme for Jekyell'
+tagline:          'A Metro theme for Jekyll'
 description:      'A Sample blog using Jekyll Metro'
 url:              'http://localhost:4000'
 baseurl:          ''
