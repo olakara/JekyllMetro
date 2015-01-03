@@ -1,3 +1,18 @@
+/*add scroll up button*/
+.scrollToTop{
+    width:48px; 
+    height:48px;
+    text-decoration: none;
+    position:fixed;
+    top:500px;
+    right:20px;
+    display:none;
+    background: url('/assets/images/scroll-up.png') no-repeat 0px 0px;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
 .justified {
     text-align: justify;
 }
@@ -20,7 +35,7 @@
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
+    padding-right: 0;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   }
@@ -71,24 +86,52 @@
 }
 
 .left-nav {
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
     list-style: none;
+    position: relative;
+    margin-left: -30px
 }
 
 .left-nav-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
     font-size: 18px;
+    text-indent: 100px;
+    line-height: 50px;
 }
 
-.left-nav > li > a,
-.left-nav > li > a:hover,
-.left-nav > li > a:focus {
-    color: #fff;
-    text-decoration:none;
+.left-nav-item a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
 }
+/*背景对比色*/
+.purple .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #4D2488;
+}
+.red .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #8B162B;
+}
+.green .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #007700;
+}
+.blue .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #0062C4;
+}
+.orange .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #C53E10;
+}
+
+
 
 .alink {
     font-size: 18px;
@@ -98,6 +141,7 @@
   text-align: justify;
 }
 
+/*this line below look like useless ;)*/
 li.purple > a,
 li.purple > a:hover,
 li.purple > a:focus {

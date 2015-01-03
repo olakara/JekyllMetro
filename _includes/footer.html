@@ -1,12 +1,6 @@
 <footer class="row">
-      <div class="col-ms-12 text-center">
+      <div class="col-sm-12 text-center" id="footer">
             <hr/>
-            &copy; {{ site.time | date: '%Y' }} - {{site.author}}. All rights reserved<br/>
-            Built using 
-            {% if page.theme And page.theme != "" And page.theme != nil %}
-            <a class="{{page.theme}}-link" href="http://jekyllrb.com/">Jekyll</a>
-            {% else %}
-            <a href="http://jekyllrb.com/">Jekyll</a>
-            {% endif %}
+            {% include svg-icons.html %}
       </div>
 </footer>
