@@ -25,6 +25,10 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
+#Although the jekyll Local test can't show the search page,
+#but if you host pages on the Github, it really works.
+- text: Search
+  url : /search
 
 # Author Details
 author:         'Abdel Raoof Olakara'
@@ -32,6 +36,20 @@ linkedin:       'https://ae.linkedin.com/in/olakara/'
 twitter:        'https://twitter.com/olakara'
 facebook:       'https://www.facebook.com/olakara'
 gplus:          'https://plus.google.com/100425464897246255887/'
+
+footer-links:
+  dribbble: 
+  email: None
+  facebook: 
+  flickr: 
+  github: None
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  google: None
+  twitter: None
+  stackoverflow: 
 
 # Google Analytics
 gahandler: 'UA-52149651-1'

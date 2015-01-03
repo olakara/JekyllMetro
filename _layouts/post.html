@@ -7,7 +7,7 @@ layout: master
     <div class="hidden-xs col-md-2 col-sm-3 blue sidebar">
       {% include sidemenu.html %}
     </div> <!-- Side column -->
-    <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
+    <div class="col-md-9 col-sm-9 col-md-offset-2 col-sm-offset-3">
       <article class="col-md-12 col-xs-12 justified">
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="publish-tag">
@@ -62,3 +62,24 @@ layout: master
     </div> <!-- content area column -->
   </div> <!-- row  -->
 </div> <!-- container -->
+<a href="#" class="scrollToTop"></a>
+<script type="text/javascript">
+    $(document).ready(function(){
+    
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+    
+});
+</script>
