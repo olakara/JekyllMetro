@@ -38,19 +38,19 @@ gahandler: 'UA-52149651-1'
 
 #if footer-links-visible is 'true' the svg-icons will be shown top on the copy right. 
 #else the svg icons will not exist
-footersvg: 'false'
+footersvg: 'true'
 
 footer-links:
   dribbble: 
-  email: zhufengdaaa@gmail.com
+  email: None
   facebook: 
   flickr: 
-  github: ZhuFengdaaa
+  github: 
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  google: https://plus.google.com/u/0/116811442309236138007/about/p/pub
+  google: None
   twitter: None
   stackoverflow: #users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
