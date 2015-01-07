@@ -1,12 +1,15 @@
 <aside>
+  <!-- 返回按钮 -->
   <div class="row">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12">
+    <br/>
+    
         {% if page.path contains '_posts' %}
-        <h1 class="text-center" style="margin-top:0px">&nbsp;<a href="/blog" class="icon icon-back"></a></h1>
+        <h1 class="text-center" style="margin-top:0px"><a href="/blog" class="icon icon-back"></a></h1>
         {% else %}
-        <h1 class="text-center" style="margin-top:0px">&nbsp;<a href="/" class="icon icon-back"></a></h1>
+        <h1 class="text-center" style="margin-top:0px"><a href="/" class="icon icon-back"></a></h1>
         {% endif %}
-  	</div>
+    </div>
   </div>
   <div class="row">
       <div class="col-md-12">
@@ -17,6 +20,6 @@
           </li>
         {% endfor %}
         </ul>
-  	</div>
-  </div>	
+    </div>
+  </div>  
 </aside>

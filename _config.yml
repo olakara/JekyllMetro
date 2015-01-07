@@ -36,6 +36,24 @@ gplus:          'https://plus.google.com/100425464897246255887/'
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
+#if footer-links-visible is 'true' the svg-icons will be shown top on the copy right. 
+#else the svg icons will not exist
+footersvg: 'true'
+
+footer-links:
+  dribbble: 
+  email: None
+  facebook: 
+  flickr: 
+  github: 
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  google: None
+  twitter: None
+  stackoverflow: #users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
 # Disqus
 disqushandler: 'testingblogo'
 
