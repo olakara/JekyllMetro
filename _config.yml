@@ -63,4 +63,4 @@ paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.7.9
+version:          0.7.10
