@@ -1,6 +1,6 @@
 /*、Scroll-up-button*/
 .scrollToTop{
-    width:48px; 
+    width:48px;
     height:48px;
     text-decoration: none;
     position:fixed;
@@ -129,6 +129,24 @@
 .orange .left-nav-item a:hover{
     text-decoration: none;
     color: #fff;
+    background: #C53E10;
+}
+
+.purple .left-nav-selected {
+  background: #4D2488;
+}
+
+.red .left-nav-selected {
+  background: #8B162B;
+}
+
+.green .left-nav-selected {
+    background: #007700;
+}
+.blue .left-nav-selected {
+    background: #0062C4;
+}
+.orange .left-nav-selected {
     background: #C53E10;
 }
 
