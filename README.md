@@ -6,6 +6,15 @@ Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
 
 Jekyll Metro is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal sites with blog. 
 
+## Version 1.0 Development
+
+Head to [development branch](https://github.com/olakara/JekyllMetro/tree/development1.0) for bleeding edge. This is current development branch. The release is planned for end of April 2015.
+New features include:
+1. Light box feature
+2. Social media share widget
+
+This release will include lots of code clean up and optimizations in CSS, JS and HTML.
+
 ## Features
 
 - Responsive Jekyll theme
