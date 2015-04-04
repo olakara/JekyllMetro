@@ -12,33 +12,29 @@ description: Home Page for Jekyll Metro Theme
 	  </div>
 	</header>
 	<nav>
-		<div class="row" style="margin-top:25px">
+		<div class="row">
  			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="about/">
-					<div class="tile purple profile bord">
+				<a href="about/" title="About Me">
+					<div class="tile purple profile">
 						<h2 class="title">About Me</h2>
 						<p>Hello World, I am {{site.author}}.</p>
 					</div>
 				</a>
 		    </div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="resume/" title="Resume" class="tile red bord icon-resume"></a>
+				<a href="resume/" title="Resume" class="tile red">
+					<i class="icon-rems" style="font-size:8em"></i>
+				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<div class="live-tile" data-mode="flip" data-delay="4000">
-					<div>
-						<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
-					</div>
-					<div>
-						<a href="blog/" title="Blog" class="tile orange bord font-fix">
-						<p>Blog Section:</p>
-							<ol>
-								<li>Posts</li>
-								<li>News</li>
-							</ol>
-						</a>
-					</div>
-				</div>
+				<a href="blog/" title="Blog"  class="tile orange">
+					<i class="icon-blog" style="font-size:8em"></i>
+				</a>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="feed.xml/" title="RSS Feed" class="tile orange">
+					<i class="icon-rss" style="font-size:8em"></i>
+				</a>
 			</div>
 		</div>
 
@@ -46,8 +42,8 @@ description: Home Page for Jekyll Metro Theme
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{post.url}}">
-					<div class="tile green bord">
+				<a href="{{post.url}}" title="Recent Article">
+					<div class="tile green">
 						<h3 class="title">Recent Article</h3>
 						<h4 class="title">{{ post.title }}</h4>
 						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
@@ -56,10 +52,11 @@ description: Home Page for Jekyll Metro Theme
 				{% endfor %}
 			</div>
 
+			
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts limit:1 %}
-				<a href="{{post.url}}">
-					<div class="tile red bord">
+				<a href="{{post.url}}" title="Latest Article">
+					<div class="tile red">
 						<h3 class="title">Latest Article</h3>
 						<h4 class="title">{{ post.title }}</h4>
 						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
@@ -67,12 +64,18 @@ description: Home Page for Jekyll Metro Theme
 				</a>
 				{% endfor %}
 			</div>
+			
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.stackoverflow}}" title="StackOverflow" class="tile" style="background-color:black">
+					<i class="icon-skow" style="font-size:8em;color:white"></i>
+				</a>
+			</div>
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts %}
 					{% if post.featured == true %}
-					<a href="{{post.url}}">
-						<div class="tile orange bord">
+					<a href="{{post.url}}" title="Featured Article">
+						<div class="tile orange">
 							<h3 class="title">Featured Article</h3>
 							<h4 class="title">{{ post.title }}</h4>
 							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
@@ -85,51 +88,37 @@ description: Home Page for Jekyll Metro Theme
 		</div>
 
 		<div class="row" style="margin-bottom:25px">
-			<div data-delay="2000" data-mode="flip" class="live-tile flip ha fix-3">
-			<div class="col-md-2 col-sm-3 col-xs-6 flip-front ha" style="transform: rotateX(180deg); transition: all 500ms ease 0s;">
-				<a class="tile blue bord lk-ico" href="https://ae.linkedin.com/in/olakara/"></a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6 flip-back ha" style="transform: rotateX(360deg); transition: all 500ms ease 0s;">
-				<a class="tile blue bord tw-ico" href="https://twitter.com/olakara"></a>
-			</div>
-		</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.twitter}}"  class="tile blue bord tw-ico"></a>
+				<a href="{{site.twitter}}" title="Twitter" class="tile blue">
+					<i class="icon-twtr" style="font-size:8em"></i>
+				</a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.facebook}}" class="tile blue bord fk-ico"></a>
+				<a href="{{site.gplus}}" title="Google Plus"  class="tile orange">
+					<i class="icon-gpls" style="font-size:8em"></i>
+				</a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="feed.xml/" class="tile purple bord rs-ico"></a>
+				<a href="{{site.facebook}}" class="tile blue">
+					<i class="icon-fcbk" style="font-size:8em"></i>
+				</a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.gplus}}" class="tile orange bord gl-ico"></a>
+				<a href="{{site.github}}" title="Github" class="tile purple">
+					<i class="icon-gthb" style="font-size:8em"></i>
+				</a>
 			</div>
 
-			<!-- Mini tile -->
-			<div class="col-md-2 col-sm-3 col-xs-6 rside">
-				<div class="row">
-					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
-					    <a href="{{site.linkedin}}" class="mtile blue bord lk-ico-sm"></a>
-					</div>
-					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
-						<a href="{{site.twitter}}"  class="mtile blue bord tw-ico-sm"></a>
-					</div>
-				</div>
-				<div class="row">
-					<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
-						<a href="{{site.facebook}}" class="mtile purple bord fk-ico-sm"></a>
-					</div>
-					<div  class="col-md-6 col-sm-6 col-xs-6 rep-2">
-						<a href="{{site.gplus}}" class="mtile orange bord gl-ico-sm"></a>
-					</div>
-				</div>
-			</div> <!-- End of Mini tile -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.linkedin}}" title="LinkedIn" class="tile blue">
+					<i class="icon-lkin" style="font-size:8em"></i>
+				</a>
+			</div>
+
 		</div>
 	</nav>
 </div>

@@ -1,0 +1,27 @@
+.icon {
+    background-image: url("../images/controls.png");
+    background-repeat: no-repeat;
+    list-style: none outside none;
+}
+
+.ic-back{background-position:-259px 0px ; width: 48px ; height: 48px;display:inline-block;text-decoration:none}
+.ic-left{background-position:0px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+.ic-right{background-position:-37px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+.ic-down{background-position:-74px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+.ic-up{background-position:-111px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+.ic-share{background-position:-148px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+.ic-print{background-position:-185px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+.ic-comment{background-position:-222px -8px ; width: 32px ; height: 32px;display:inline-block;text-decoration:none }
+
+.scrollToTop {
+    width:32px;
+    height:32px;
+    text-decoration: none;
+    position:fixed;
+    top:500px;
+    right:45px;
+    display:none;    
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}

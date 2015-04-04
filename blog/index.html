@@ -9,7 +9,8 @@ bloghome: true
           <div class="hidden-xs col-md-2 col-sm-3 orange sidebar">
             {% include sidemenu.html %}
           </div>
-          <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
+          <div class="col-md-1"></div>
+          <div class="col-md-8 col-sm-7 col-md-offset-2 col-sm-offset-4">
             <div class="row">
               {% for post in paginator.posts %}
               <article class="col-md-12 justified">
@@ -58,5 +59,6 @@ bloghome: true
             </div>
             {% include footer.html %}
           </div>
+          <div class="col-md-1"></div>
         </div>
       </div>

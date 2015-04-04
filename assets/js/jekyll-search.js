@@ -42,7 +42,7 @@
                 if(e.which === 13){
                     if(matches)
                         window.location = matches[0].url;
-                        
+
                     //follow the first link
                     // if(searchResults.children().length)
                 }
@@ -62,7 +62,7 @@
                 for (key in obj) {
                     if(obj.hasOwnProperty(key)){
                         if (obj[key] instanceof Array){
-                            var seen = false;			    
+                            var seen = false;
                             for (var j = 0; j < obj[key].length; j++){
                                 if(obj[key][j].toLowerCase().indexOf(str.toLowerCase()) >= 0){
                                     matches.push(obj);
@@ -102,8 +102,7 @@
 	    searchMessage.html('');
             searchResultsHeader.html('');
             searchResultsList.children().remove();
-              		 
+
         }
     }
 }(jQuery));
-
