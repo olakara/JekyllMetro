@@ -10,8 +10,9 @@ Jekyll Metro is a theme built on top of bootstrap and other freely available lib
 
 Head to [development branch](https://github.com/olakara/JekyllMetro/tree/development1.0) for bleeding edge. This is current development branch. The release is planned for end of April 2015.
 New features include:
-1. Light box feature
-2. Social media share widget
+- Light box feature
+- Social media share widget
+- New colors
 
 This release will include lots of code clean up and optimizations in CSS, JS and HTML.
 
