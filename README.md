@@ -12,11 +12,11 @@ This is development branch.. Items currently under works are:
 4. New background images (Free images available on web)
 5. ...
 
-Breakable stuff:
-1. Tiles may not be responsive
-2. Small tiles are not considered
-3. Search is broken
-4. Layouts may be broken
+Breakable stuff in this release:
+- Tiles may not be responsive
+- Small tiles are not considered
+- Search is broken
+- Layouts may be broken
 
 ## License
 
