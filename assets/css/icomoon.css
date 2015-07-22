@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-adosmm');
+	src:url('../fonts/icomoon.eot?#iefix-adosmm') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-adosmm') format('woff'),
+		url('../fonts/icomoon.ttf?-adosmm') format('truetype'),
+		url('../fonts/icomoon.svg?-adosmm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rems:before {
+	content: "\e926";
+}
+
+.icon-blog:before {
+	content: "\ea62";
+}
+
+.icon-gpls:before {
+	content: "\ea88";
+}
+
+.icon-fcbk:before {
+	content: "\ea8c";
+}
+
+.icon-igrm:before {
+	content: "\ea90";
+}
+
+.icon-twtr:before {
+	content: "\ea91";
+}
+
+.icon-rss:before {
+	content: "\ea94";
+}
+
+.icon-utub:before {
+	content: "\ea99";
+}
+
+.icon-vimo:before {
+	content: "\ea9c";
+}
+
+.icon-drbb:before {
+	content: "\eaa6";
+}
+
+.icon-dart:before {
+	content: "\eaab";
+}
+
+.icon-gthb:before {
+	content: "\eab1";
+}
+
+.icon-redt:before {
+	content: "\eac7";
+}
+
+.icon-lkin:before {
+	content: "\eac9";
+}
+
+.icon-dlus:before {
+	content: "\eacc";
+}
+
+.icon-skow:before {
+	content: "\eacf";
+}
+
+.icon-ylep:before {
+	content: "\ead9";
+}

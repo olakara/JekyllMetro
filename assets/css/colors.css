@@ -1,0 +1,457 @@
+.li8-green, .green, .drk-green,
+.magenta, .li8-purple, .purple,
+.darken, .teal, .blue, .drk-blue,
+ .red, .orange {
+    color: #fff;
+}
+
+.yellow {
+  color: #000;
+}
+
+/* Basic color palette */
+
+.li8-green {
+    background: #99b433;
+    border: 1px solid #56651D;
+}
+
+.green {
+    background: #00A600;
+    border: 1px solid #007700;
+}
+
+.drk-green {
+    background: #1e7145;
+    border: 1px solid #185A37;
+}
+
+.magenta {
+    background: #ff0097
+    border: 1px solid #CC0079;
+}
+
+.li8-purple {
+    background: #9f00a7;
+    border: 1px solid #7F0086;
+}
+
+.purple {
+    background: #5133AB;
+    border: 1px solid #412989;
+}
+
+.darken {
+    background:#1d1d1d;
+    border: 1px solid #111111;
+}
+
+.teal {
+    background: #00aba9;
+    border: 1px solid #008987;
+}
+
+.blue {
+    background: #007fff;
+    border: 1px solid #0062C4;
+
+}
+
+.drk-blue {
+    background: #2b5797;
+    border: 1px solid #224679;
+}
+
+.red {
+    background: #AC193D;
+    border: 1px solid #8B162B;
+}
+
+.yellow {
+  background: #ffc40d;
+  border: 1px solid #CC9D0A;
+}
+
+.orange {
+    background: #da532c;
+    border: 1px solid #C53E10
+}
+
+/* Left Navigation */
+.li8-green .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #99b433;
+}
+
+.green .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #00A600;
+}
+
+.drk-green .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #1e7145;
+}
+
+.magenta .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #ff0097;
+}
+
+.li8-purple .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #9f00a7;
+}
+
+.purple .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #5133AB;
+}
+
+.darken .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #1d1d1d;
+}
+
+.teal .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #00aba9;
+}
+
+.blue .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #007fff;
+}
+
+.drk-blue .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #2b5797;
+}
+
+.red .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #AC193D;
+}
+
+.yellow .left-nav-item a:hover{
+    text-decoration: none;
+    color: #000;
+    background: #ffc40d;
+}
+
+.orange .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #da532c;
+}
+
+.li8-green .left-nav-selected {
+  background: #56651D;
+}
+
+.green .left-nav-selected {
+  background: #007700;
+}
+
+.drk-green .left-nav-selected {
+    background: #185A37;
+}
+
+.magenta .left-nav-selected {
+    background: #CC0079;
+}
+
+.li8-purple .left-nav-selected {
+    background: #7F0086;
+}
+
+.purple .left-nav-selected {
+    background: #412989;
+}
+
+.darken .left-nav-selected {
+    background: #111111;
+}
+
+.teal .left-nav-selected {
+    background: #008987;
+}
+
+.blue .left-nav-selected {
+    background: #0062C4;
+}
+
+.drk-blue .left-nav-selected {
+    background: #224679;
+}
+
+.red .left-nav-selected {
+    background: #8B162B;
+}
+
+.yellow .left-nav-selected {
+    background: #CC9D0A;
+}
+
+.orange .left-nav-selected {
+    background: #C53E10;
+}
+
+
+li.li8-green > a,
+li.li8-green > a:hover,
+li.li8-green > a:focus {
+    color: #fff;
+    background: #99b433;
+    text-decoration: none;
+}
+
+li.green > a,
+li.green > a:hover,
+li.green > a:focus {
+    color: #fff;
+    background: #00A600;
+    text-decoration: none;
+}
+
+li.drk-green > a,
+li.drk-green > a:hover,
+li.drk-green > a:focus {
+    color: #fff;
+    background: #1e7145;
+    text-decoration: none;
+}
+
+li.magenta > a,
+li.magenta > a:hover,
+li.magenta > a:focus {
+    color: #fff;
+    background: #ff0097;
+    text-decoration: none;
+}
+
+li.li8-purple > a,
+li.li8-purple > a:hover,
+li.li8-purple > a:focus {
+    color: #fff;
+    background: #9f00a7;
+    text-decoration: none;
+}
+
+li.purple > a,
+li.purple > a:hover,
+li.purple > a:focus {
+    color: #fff;
+    background: #5133AB;
+    text-decoration: none;
+}
+
+li.darken > a,
+li.darken > a:hover,
+li.darken > a:focus {
+    color: #fff;
+    background: #1d1d1d;
+    text-decoration: none;
+}
+
+li.teal > a,
+li.teal > a:hover,
+li.teal > a:focus {
+    color: #fff;
+    background: #00aba9;
+    text-decoration: none;
+}
+
+li.blue > a,
+li.blue > a:hover,
+li.blue > a:focus {
+    color: #fff;
+    background: #007fff;
+    text-decoration: none;
+}
+
+li.drk-blue > a,
+li.drk-blue > a:hover,
+li.drk-blue > a:focus {
+    color: #fff;
+    background: #2b5797;
+    text-decoration: none;
+}
+
+li.red > a,
+li.red > a:hover,
+li.red > a:focus {
+    color: #fff;
+    background: #AC193D;
+    text-decoration: none;
+}
+
+li.yellow > a,
+li.yellow > a:hover,
+li.yellow > a:focus {
+    color: #fff;
+    background: #ffc40d;
+    text-decoration: none;
+}
+
+li.orange > a,
+li.orange > a:hover,
+li.orange > a:focus {
+    color: #fff;
+    background: #da532c;
+    text-decoration: none;
+}
+
+.btn-li8-green {
+    color: #fff;
+    background: #99b433;
+}
+
+.btn-green {
+    color: #fff;
+    background: #00A600;
+}
+
+.btn-drk-green {
+    color: #fff;
+    background: #1e7145;
+}
+
+.btn-magenta {
+    color: #fff;
+    background: #ff0097;
+}
+
+.btn-li8-purple {
+    color: #fff;
+    background: #9f00a7;
+}
+
+.btn-purple {
+    color: #fff;
+    background: #5133AB;
+}
+
+.btn-darken {
+    color: #fff;
+    background: #1d1d1d;
+}
+
+.btn-teal {
+    color: #fff;
+    background: #00aba9;
+}
+
+.btn-blue {
+    color: #fff;
+    background: #007fff;
+}
+
+.btn-drk-blue {
+    color: #fff;
+    background: #2b5797;
+}
+
+.btn-red {
+    color: #fff;
+    background: #AC193D;
+}
+
+.btn-yellow {
+    color: #fff;
+    background: #ffc40d;
+}
+
+.btn-orange {
+    color: #fff;
+    background: #da532c;
+}
+
+a.li8-green-link,
+a.li8-green-link:hover,
+a.li8-green-link:focus{
+    color: #99b433;
+}
+
+a.green-link,
+a.green-link:hover,
+a.green-link:focus {
+    color: #00A600;
+}
+
+a.drk-green-link,
+a.drk-green-link:hover,
+a.drk-green-link:focus {
+    color: #1e7145;
+}
+
+a.magentamagenta-link,
+a.magenta-link:hover,
+a.magenta-link:focus {
+    color: #ff0097;
+}
+
+a.li8-purple-link,
+a.li8-purple-link:hover,
+a.li8-purple-link:focus {
+    color: #9f00a7;
+}
+
+a.purple-link,
+a.purple-link:hover,
+a.purple-link:focus {
+    color: #5133AB;
+}
+
+a.darken-link,
+a.darken-link:hover,
+a.darken-link:focus {
+    color: #1d1d1d;
+}
+
+a.teal-link,
+a.teal-link:hover,
+a.teal-link:focus {
+    color: #00aba9;
+}
+
+a.drk-blue-link,
+a.drk-blue-link:hover,
+a.drk-blue-link:focus {
+    color: #007fff;
+}
+
+a.drk-blue-link,
+a.drk-blue-link:hover,
+a.drk-blue-link:focus {
+    color: #2b5797;
+}
+
+a.red-link,
+a.red-link:hover,
+a.red-link:focus {
+    color: #AC193D;
+}
+
+a.yellow-link,
+a.yellow-link:hover,
+a.yellow-link:focus {
+    color: #ffc40d;
+}
+
+a.orange-link,
+a.orange-link:hover,
+a.orange-link:focus {
+    color: #da532c;
+}

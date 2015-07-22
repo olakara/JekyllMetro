@@ -4,10 +4,10 @@ layout: master
 
 <div class="container-fluid">
   <div class="row">
-    <div class="hidden-xs col-md-2 col-sm-3 blue sidebar">
+    <div class="hidden-xs col-md-2 col-sm-3 li8-green sidebar">
       {% include sidemenu.html %}
     </div> <!-- Side column -->
-    <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
+    <div class="col-md-8 col-sm-7 col-md-offset-3 col-sm-offset-4">
       <article class="col-md-12 col-xs-12 justified">
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="publish-tag">
@@ -17,10 +17,10 @@ layout: master
         <br/>
         <span class="fa fa-tag"></span>Tags:
         {% if page.tags %}
-          {% for tag in page.tags %}		
+          {% for tag in page.tags %}
             <a href="/tags/{{tag}}"><span class="label label-primary">{{tag}}</span></a>
           {% endfor %}
-        {% else %}  
+        {% else %}
           None
         {% endif %}
         <br/><br/>
@@ -29,7 +29,7 @@ layout: master
         <script type="text/javascript">
           /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
           var disqus_shortname = '{{site.disqushandler}}';
-  
+
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {
               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -39,8 +39,8 @@ layout: master
         </script>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </article> 
-      
+      </article>
+
       <div class="row">
         <div class="col-sm-6 col-xs-6 text-left">
        	{% if page.previous.url %}
@@ -54,11 +54,11 @@ layout: master
         	<a class="btn btn-blue" href="{{page.next.url}}">Next →</a>
         {% else %}
         	<span class="btn btn-blue disabled">Next →</span>
-        {% endif %} 
+        {% endif %}
         </div>
       </div>
-      
-      {% include footer.html %}  
+
+      {% include footer.html %}
     </div> <!-- content area column -->
   </div> <!-- row  -->
 </div> <!-- container -->

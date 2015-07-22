@@ -10,7 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyll'
 description:      'A Sample blog using Jekyll Metro'
-url:              'http://localhost:4000'
+url:              'http://192.168.1.11:4000'
 baseurl:          ''
 
 # Navigation
@@ -25,37 +25,32 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
+- text: Search
+  url: /search/
 
 
 # Author Details
 author:         'Abdel Raoof Olakara'
 
-#Social Media links
-linkedin:       'https://ae.linkedin.com/in/olakara/'
-twitter:        'https://twitter.com/olakara'
+#Social Media links (Use complete URL except for email)
+dribbble:
+email:
 facebook:       'https://www.facebook.com/olakara'
+flickr:
+github:         'https://github.com/olakara'
 gplus:          'https://plus.google.com/100425464897246255887/'
+instagram:
+pinterest:
+linkedin:       'https://ae.linkedin.com/in/olakara/'
+rss:
+stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
+twitter:        'https://twitter.com/olakara'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
-#if footer-links-visible is 'true' the svg-icons will be shown top on the copy right.
-#else the svg icons will not exist
+#if footersvg is 'true' the social media links will be shown top on the copy right in the footer
 footersvg: 'true'
-
-footer-links:
-  dribbble:
-  email: None
-  facebook:
-  flickr:
-  github:
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  google: None
-  twitter: None
-  stackoverflow: #users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Disqus
 disqushandler: 'testingblogo'
@@ -66,4 +61,4 @@ paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.8
+version:          0.9x beta 2

@@ -1,8 +1,3 @@
-
-.bord {
-   border: 1px solid #fff;
-}
-
 .mtile {
     box-sizing: border-box;
     display: inline-block;
@@ -28,90 +23,6 @@
 	font-size: 18px;
 }
 
-.fk-ico {
-	background-image: url('/assets/images/fk_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.fk-ico-sm {
-	background-image: url('/assets/images/fk_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.gl-ico {
-	background-image: url('/assets/images/gl_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.gl-ico-sm {
-	background-image: url('/assets/images/gl_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.tw-ico {
-	background-image: url('/assets/images/tw_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.tw-ico-sm {
-	background-image: url('/assets/images/tw_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.lk-ico {
-	background-image: url('/assets/images/lk_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.lk-ico-sm {
-	background-image: url('/assets/images/lk_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.rs-ico {
-	background-image: url('/assets/images/rs_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.rs-ico-sm {
-	background-image: url('/assets/images/rs_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-resume {
-	background-image: url('/assets/images/icon-resume.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-resume-small {
-	background-image: url('/assets/images/icon-resume-small.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-blog {
-	background-image: url('/assets/images/icon-blog.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-blog-small {
-	background-image: url('/assets/images/icon-blog-small.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
 .rep-1 {
     margin-top: -9%;
     padding-left: 0;
@@ -124,30 +35,30 @@
 
 /* Media queries for animated tiles (narmal size) */
 
-@media only screen 
+@media only screen
 and (min-width : 1224px) {
 .fix-3 {
 	width: 16.6% !important;
 }
 }
 
-@media only screen 
-and (min-width : 320px) 
+@media only screen
+and (min-width : 320px)
 and (max-width : 768px) {
 .fix-3 {
 	width: 50% !important;
 }
 }
 
-@media only screen 
-and (min-width : 768px) 
+@media only screen
+and (min-width : 768px)
 and (max-width : 1224px) {
 .fix-3 {
 	width: 25% !important;
 }
 }
 
-@media only screen 
+@media only screen
 and (max-width : 320px) {
 .fix-3{
 	width: 50% !important;

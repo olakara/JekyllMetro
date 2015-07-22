@@ -1,0 +1,11 @@
+{
+  "name": "JekyllMetro",
+  "version": "1.0.0",
+  "description": "Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdel Raoof Olakara",
+  "license": "MIT"
+}
