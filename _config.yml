@@ -3,6 +3,9 @@ markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: pygments
 
+# Needed for backward compatibility
+gems: [jekyll-paginate]
+
 # Permalinks
 permalink:        /blog/:year/:month/:day/:title
 
