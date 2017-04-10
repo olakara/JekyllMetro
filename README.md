@@ -28,6 +28,7 @@ Currently I am busy with other project and will devote less time in developing t
 - Blog article page with configurable color themes
 - Easy integration with Google Analytics
 - Easy integration with Disqus for comments
+- Easy integration with txtpen for highlights
 
 ## Demo
 

@@ -58,6 +58,9 @@ footersvg: 'true'
 # Disqus
 disqushandler: 'testingblogo'
 
+# txtpen
+txtpenhandler: 'testingblogo'
+
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
 paginate_path: '/blog/page:num'
